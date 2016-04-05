@@ -10,10 +10,12 @@ class Calc(object):
         self.numbers = []
         self.curnumber = ""
 
+
     def add_number(self):
         self.numbers.append(int(self.curnumber))
         self.curnumber = ""
-
+    def apply(self):
+        return
     def clear(self):
         self.curnumber = ""
         self.operations = []
