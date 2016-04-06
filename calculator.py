@@ -32,6 +32,9 @@ class Calc(object):
         elif symbol == '+':
             self.operations.append("+")
             self.add_number()
+        elif symbol =  '-':
+            self.operations.append("-")
+            self.add_number()
         elif symbol == '=':
             self.add_number()
             while len(self.operations) > 0:
@@ -42,3 +45,9 @@ class Calc(object):
                     self.display = str(res)
                     self.curnumber = str(res)
                     self.numbers.append(res)
+                elif op == '-':
+                    res = left - right
+                    self.display str(res)
+                    self.curnumber = str(res)
+                    self.numbers.append(res)
+                    
