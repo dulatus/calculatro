@@ -52,7 +52,13 @@ class TestCalc(unittest.TestCase):
         c.press("2")
         c.press("=")
         self.assertEqual(c.display, "5")
-
+    def test_9(self):
+        "1-2"
+        c = Calc()
+        c.press("1")
+        c.press("-")
+        c.press("2")
+        c.press("=")
     def test_7(self):
         """1+1+1+2=5"""
         c = Calc()
