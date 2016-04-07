@@ -32,7 +32,7 @@ class Calc(object):
         elif symbol == '+':
             self.operations.append("+")
             self.add_number()
-        elif symbol =  '-':
+        elif symbol ==  '-':
             self.operations.append("-")
             self.add_number()
         elif symbol == '=':
